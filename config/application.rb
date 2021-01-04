@@ -19,7 +19,7 @@ module RedmineApp
 
     config.active_record.store_full_sti_class = true
     config.active_record.default_timezone = :local
-
+    config.assets.initialize_on_precompile = false
     # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
     # Run "rake -D time" for a list of tasks for finding time zone names. Default is UTC.
     # config.time_zone = 'Central Time (US & Canada)'
