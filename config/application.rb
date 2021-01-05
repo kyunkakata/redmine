@@ -64,7 +64,7 @@ module RedmineApp
 
     # Verify validity of user sessions
     config.redmine_verify_sessions = true
-
+    config.assets.initialize_on_precompile = false
     # Specific cache for search results, the default file store cache is not
     # a good option as it could grow fast. A memory store (32MB max) is used
     # as the default. If you're running multiple server processes, it's
